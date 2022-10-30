@@ -1,0 +1,103 @@
+/CSS
+    to
+    add
+    checkboxes
+    to
+    colvis
+    items/
+    .dt-button-collection
+    a.buttons-columnVisibility:before,
+.dt-button-collection a.buttons-columnVisibility.active span:before {
+    display: block;
+    position: absolute;
+    top: 1.2em;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+}
+
+.dt-button-collection a.buttons-columnVisibility:before {
+    content: " ";
+    margin-top: -6px;
+    margin-left: 5px;
+    border: 1px solid black;
+    border-radius: 0px;
+}
+
+.dt-button-collection a.buttons-columnVisibility.active span:before {
+    content: "\2714";
+    margin-top: -11px;
+    margin-left: 8px;
+    text-align: center;
+    text-shadow: 1px 1px #ddd, -1px -1px #ddd, 1px -1px #ddd, -1px 1px #ddd;
+}
+
+.dt-button-collection a.buttons-columnVisibility span {
+    margin-left: 8px;
+}
+.required::after {
+    content: "*";
+    color: red;
+}
+
+#loader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75) url(/dashboard/images/loader.gif) no-repeat
+        center center;
+    z-index: 10000;
+}
+
+/* Added to style the scroll bar on 06 May 2021 */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1f60ad;
+    border-radius: 10px;
+}
+
+body[data-sidebar="dark"] .menu-title {
+    color: #f2f2f3;
+    font-weight: bolder !important;
+    font-size: 16px !important;
+}
+
+.plans-group > .row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.plans-group > .row > .col-ms-4 {
+    flex: 0 0 auto;
+}
+
+.card[data-clickable="true"] {
+    cursor: pointer;
+}
+
+.status-contact-details{
+    padding-top: 60px;
+}
+
+.status-contact-details p{
+    margin-bottom: 5px !important;
+}
+

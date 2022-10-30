@@ -1,0 +1,6 @@
+{
+    "cSpell.enableFiletypes": [
+        "blade"
+    ],
+    "dotenv.enableAutocloaking": false
+}

@@ -1,0 +1,13 @@
+.required::after {
+    font-weight: bold;
+    color: red;
+    content: "*";
+}
+
+.bx-align {
+    margin-top: 32px !important;
+}
+.container-add-authorised-person {
+    margin: 0 10px 10px 0;
+    text-align: right;
+}
